@@ -4,7 +4,7 @@ WORKDIR /usr/src/api
 
 COPY . /usr/src/api/
 
-RUN yarn install --quiet --no-optional --no-fund --lolevel=error
+RUN yarn install --no-optional --no-fund --lolevel=error
 
 RUN yarn build
 
